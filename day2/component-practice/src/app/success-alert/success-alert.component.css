@@ -1,0 +1,9 @@
+.alert {
+    padding: 1rem;
+    margin: 0.25rem 0.5rem;
+}
+
+.--success {
+    background-color: green;
+    color: #fff;
+}
