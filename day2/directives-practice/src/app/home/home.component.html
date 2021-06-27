@@ -1,0 +1,15 @@
+<main>
+    <button class='button'
+    (click)='logNewClick()'>Display Details</button>
+    <p class='hidden-text' *ngIf='!isMessageHidden'>Secret password = tuna</p>
+    <p>The button was clicked {{clicksList.length}}</p>
+    <ol>
+        <li *ngFor="let click of clicksList; index as i" 
+        [ngStyle]='getBackgroundByIndex(i)'
+        >
+            <span [ngClass]="i > 3 ? 'fg-white' : ''">
+                {{clicksList[i]}}
+            </span>
+        </li>
+    </ol>
+</main>
