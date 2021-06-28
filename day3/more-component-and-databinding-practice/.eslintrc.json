@@ -10,13 +10,16 @@
       ],
       "parserOptions": {
         "project": [
-          "tsconfig.json"
+          "./tsconfig.json"
         ],
+        "tsconfigRootDir": "./more-component-and-databinding-practice",
         "createDefaultProgram": true
       },
       "extends": [
         "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:prettier/recommended",
+        "prettier/@typescript-eslint"
       ],
       "rules": {
         "@angular-eslint/directive-selector": [
