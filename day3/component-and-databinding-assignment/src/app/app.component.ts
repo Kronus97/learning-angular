@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'component-and-databinding-assignment';
+    oddNumbers: number[] = [];
+    evenNumbers: number[] = [];
+    
+    onTick(number: number) {
+        number % 2 == 1 ? this.oddNumbers.push(number) : this.evenNumbers.push(number);
+    }
 }
