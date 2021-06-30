@@ -15,5 +15,10 @@ export class ShoppingListComponent implements OnInit {
 
     constructor() {}
 
+    // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
     ngOnInit(): void {}
+
+    onIngredientAdded(ingredient: Ingredient): void {
+        this.ingredients.push(ingredient);
+    }
 }
