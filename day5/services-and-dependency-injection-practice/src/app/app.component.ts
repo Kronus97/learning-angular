@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
+import { UsersService } from './users.service';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  title = 'services-and-dependency-injection-practice';
-}
+export class AppComponent {}
