@@ -12,7 +12,10 @@ export class HomeComponent implements OnInit {
     // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
     ngOnInit() {}
 
-    onLoadServers(): void {
-        this.router.navigate(['/servers']);
+    onLoadServer(id: number): void {
+        this.router.navigate(['/servers', id, 'edit'], {
+            queryParams: { allowEdit: '1' },
+            fragment: 'loading',
+        });
     }
 }
